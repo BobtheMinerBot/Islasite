@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('css', filename='styles.css') }}"> 
+  <title>Isla Builders - Quality Construction</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="{{ url_for('views.go_to_home') }}">
+      <img src="{{ url_for('static', filename='images/icon.jpg') }}" alt="Isla Builders Logo">
+      </a>
+    </div>
+    <a href="{{ url_for('views.go_to_home') }}">
+    <div class="site-title">
+      <h1>Isla Builders</h1>
+    </div>
+  </a>
+    <div class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="{{ url_for('views.go_to_home') }}">Home</a></li>
+        <li><a href="{{ url_for('views.services') }}">Services</a></li>
+        <li><a href="{{ url_for('views.contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <main>
+    <section id="Home" >
+      <div id="welcome_screen" class="content container">
+        <h2 id="hero">Quality Construction, Island Style</h2>
+        <p id="welcomep">Your One-Stop Shop for Construction Services in the Florida Keys</p>
+        <button id="ctabutton" class="cta-button button">
+          <span >Schedule a Free Consultation Today!</span>
+        </button>
+      </div>
+    </section>
+  </main>
+  
+  
+<section id="services">
+  <h1 class="Service_Header container">Our Services</h1>
+  <div class="list_section">
+     <ul class="main-list">
+        <div class="list-style">
+           <li>
+              <h3>New Construction</h3>
+              <ul class="sub-list">
+                 <li>Project Planning</li>
+                 <li>Design</li>
+                 <li>Foundations</li>
+                 <li>Permitting</li>
+                 <li>Inspections</li>
+                 <li>Warranty</li>
+              </ul>
+           </li>
+        </div>
+        <div class="list-style">
+           <li>
+              <h3>Remodel</h3>
+              <ul class="sub-list">
+                 <li class="service-list">Interior Remodeling</li>
+                 <li class="service-list">Exterior Renovation</li>
+                 <li class="service-list">Kitchen Remodeling</li>
+                 <li class="service-list">Bathroom Remodeling</li>
+                 <li class="service-list">Addition</li>
+                 <li class="service-list">Impact Windows & Door</li>
+              </ul>
+           </li>
+        </div>
+        <div class="list-style">
+           <li>
+              <h3>Concrete Repair</h3>
+              <ul class="sub-list">
+                 <li>Spalling Repair</li>
+                 <li>Foundation Repair</li>
+                 <li>Driveways</li>
+                 <li>Docks and Seawalls</li>
+                 <li>Docks and Seawalls</li>
+              </ul>
+           </li>
+        </div>
+     </ul>
+  </div>
+</section>
+
+    <section id="learnmore">
+      <div class= "learndivider">
+      <button id="learnmorebutton"  class="button learnmore"> All Services
+      </button>
+    </div>
+    </section>
+        <div>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At Isla Builders, we are dedicated to providing top-quality construction services to our clients in the Florida Keys. With years of experience, our team is committed to delivering exceptional results, no matter the size or complexity of the project.</p>
+        </section>
+        <section id="testt">
+          <div class="testimonial-container">
+            <div class="testimonial-container">
+              <div class="testimonial">
+                <img src="{{ url_for('static', filename='images/customer1.jpg') }}" alt="Isla Builders Logo">
+                  <p>Excellent service! I couldn't be happier with the results. The team exceeded my expectations.</p>
+                  <span>John Doe</span>
+              </div>
+              <div class="testimonial">
+                <img src="{{ url_for('static', filename='images/icon2.jpg') }}" alt="Isla Builders Logo">
+                  <p>Outstanding work! They were professional and attentive to every detail. Highly recommended.</p>
+                  <span>Jane Smith</span>
+              </div>
+              <div class="testimonial">
+                <img src="{{ url_for('static', filename='images/icon3.jpg') }}" alt="Isla Builders Logo">
+                  <p>Outstanding work! They were professional and attentive to every detail. Highly recommended.</p>
+                  <span>Jane Smith</span>
+              </div>
+            <!-- Add more testimonials as needed -->
+        </div>
+        
+        <div class="testimonial-arrows">
+            <span class="prev-arrow">&lt;</span>
+            <span class="next-arrow">&gt;</span>
+        </div>
+        </section>
+      </div>
+        <section>
+
+        </section>  
+        <section id="contact">
+            <h2>Get in Contact</h2>
+            <div id="google-form">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIWU7EdhTWLR8WeVseRzJn0bh3IAp_wX5hD0ddOFpnsucrmQ/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+            <p id="p1">If you have any questions or would like to discuss your construction needs, please feel free to contact us:</p>
+            <div Id=" Contact-info">
+            <address>
+                <p>Email: <a href="mailto:info@islabuilders.com">info@islabuilders.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (123) 456-7890</a></p>
+                <p>Address: 123 Construction Way, Key West, FL 33040</p>
+            </address>
+          </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Isla Builders. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('js', filename='main.js') }}"></script>
+</body>
+</html>
