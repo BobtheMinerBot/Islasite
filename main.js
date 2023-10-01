@@ -83,4 +83,4 @@ window.addEventListener('scroll', function() {
   });
   
   userInteracted = false; // Reset userInteracted flag immediately after scrolling
-  
+})
